@@ -114,4 +114,4 @@ streamlit run deliverables/dashboard.py
 - **scikit-learn** — Classification and evaluation
 
 ## Authors
-Data Science Team — Summer Project 2026
+Pratham Gupta— Summer Project 2026
