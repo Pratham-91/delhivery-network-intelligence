@@ -53,11 +53,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Data Loading ──
+# Resolve project root relative to this script's location
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 @st.cache_data
 def load_data():
     """Load all output data files."""
     data = {}
-    output_dir = Path('outputs')
+    output_dir = PROJECT_ROOT / 'outputs'
     
     try:
         data['hub_metrics'] = pd.read_csv(output_dir / 'hub_metrics.csv')
@@ -145,7 +148,7 @@ if page == "📊 Network Overview":
     # Network Graph Image
     col1, col2 = st.columns([2, 1])
     with col1:
-        graph_path = Path('outputs/graphs/network_graph.png')
+        graph_path = PROJECT_ROOT / 'outputs/graphs/network_graph.png'
         if graph_path.exists():
             st.image(str(graph_path), caption="Logistics Network Graph", use_container_width=True)
         else:
@@ -226,7 +229,7 @@ elif page == "🏭 Hub Risk Scorecard":
     
     # Scatter plot
     st.markdown("### Structural Importance vs Operational Delay")
-    img_path = Path('outputs/graphs/centrality_vs_delay.png')
+    img_path = PROJECT_ROOT / 'outputs/graphs/centrality_vs_delay.png'
     if img_path.exists():
         st.image(str(img_path), use_container_width=True)
 
@@ -262,13 +265,13 @@ elif page == "🛤️ Corridor Analysis":
         
         # Heatmap
         st.markdown("### Corridor Delay Heatmap")
-        img_path = Path('outputs/graphs/corridor_heatmap.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/corridor_heatmap.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
         
         # SLA breach corridors
         st.markdown("### SLA Breach Corridor Ranking")
-        img_path = Path('outputs/graphs/sla_breach_corridors.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/sla_breach_corridors.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
 
@@ -316,17 +319,17 @@ elif page == "🤖 ETA Model Performance":
         
         # Comparison charts
         st.markdown("### Model Comparison Charts")
-        img_path = Path('outputs/graphs/model_comparison.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/model_comparison.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
         
         st.markdown("### Actual vs Predicted")
-        img_path = Path('outputs/graphs/actual_vs_predicted.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/actual_vs_predicted.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
         
         st.markdown("### Feature Importance")
-        img_path = Path('outputs/graphs/feature_importance.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/feature_importance.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
 
@@ -375,7 +378,7 @@ elif page == "🚚 FTL vs Carting":
         
         # FTL vs Carting plots
         st.markdown("### Analysis Charts")
-        img_path = Path('outputs/graphs/ftl_vs_carting.png')
+        img_path = PROJECT_ROOT / 'outputs/graphs/ftl_vs_carting.png'
         if img_path.exists():
             st.image(str(img_path), use_container_width=True)
 
