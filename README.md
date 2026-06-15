@@ -1,5 +1,7 @@
 # Delhivery Graph-Based Network Intelligence
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://delhivery-network-intelligence-gptcu4kmaps7opkmm2majv.streamlit.app/)
+
 > Optimizing Delivery ETAs with Graph-Based Network Intelligence
 
 A comprehensive data science solution that models Delhivery's logistics network as a directed graph to produce smarter ETA predictions, identify bottleneck hubs, and generate actionable operational recommendations.
