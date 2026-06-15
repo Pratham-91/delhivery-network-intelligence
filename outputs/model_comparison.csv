@@ -1,0 +1,4 @@
+model,MAE,RMSE,MedAE,Accuracy_15pct,Accuracy_20pct
+baseline,17.9642,53.9264,7.4167,22.26,28.96
+graph_enhanced,14.9958,51.47,5.308,31.71,40.02
+graph_n2v,15.17,50.9176,5.5323,30.05,38.57

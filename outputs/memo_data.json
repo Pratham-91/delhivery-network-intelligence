@@ -1,0 +1,169 @@
+{
+  "top_5_hubs": [
+    {
+      "facility_name": "Gurgaon_Bilaspur_HB (Haryana)",
+      "state": "Haryana",
+      "bottleneck_score": 0.9772000000000001,
+      "bottleneck_rank": 1,
+      "betweenness_centrality": 0.220359,
+      "pct_delayed_out": 0.943,
+      "total_volume": 1991,
+      "sla_contribution_pct": 7.709308372334893
+    },
+    {
+      "facility_name": "Bangalore_Nelmngla_H (Karnataka)",
+      "state": "Karnataka",
+      "bottleneck_score": 0.7386865035700879,
+      "bottleneck_rank": 2,
+      "betweenness_centrality": 0.166009,
+      "pct_delayed_out": 0.742,
+      "total_volume": 1433,
+      "sla_contribution_pct": 4.740856300918703
+    },
+    {
+      "facility_name": "Bhiwandi_Mankoli_HB (Maharashtra)",
+      "state": "Maharashtra",
+      "bottleneck_score": 0.6844825448358698,
+      "bottleneck_rank": 3,
+      "betweenness_centrality": 0.065061,
+      "pct_delayed_out": 0.961,
+      "total_volume": 1404,
+      "sla_contribution_pct": 5.646559195701161
+    },
+    {
+      "facility_name": "Hyderabad_Shamshbd_H (Telangana)",
+      "state": "Telangana",
+      "bottleneck_score": 0.6019752475089701,
+      "bottleneck_rank": 4,
+      "betweenness_centrality": 0.085112,
+      "pct_delayed_out": 0.939,
+      "total_volume": 734,
+      "sla_contribution_pct": 2.8211128445137805
+    },
+    {
+      "facility_name": "Kolkata_Dankuni_HB (West Bengal)",
+      "state": "West Bengal",
+      "bottleneck_score": 0.5534580855757967,
+      "bottleneck_rank": 5,
+      "betweenness_centrality": 0.073083,
+      "pct_delayed_out": 0.954,
+      "total_volume": 481,
+      "sla_contribution_pct": 2.03241462991853
+    }
+  ],
+  "top_10_corridors": [
+    {
+      "source_name": "Bangalore_Nelmngla_H (Karnataka)",
+      "dest_name": "Bengaluru_KGAirprt_HB (Karnataka)",
+      "trip_count": 151,
+      "median_delay_ratio": 1.4,
+      "pct_delayed": 0.6490066225165563,
+      "breach_impact": 98.0
+    },
+    {
+      "source_name": "Bhiwandi_Mankoli_HB (Maharashtra)",
+      "dest_name": "Mumbai Hub (Maharashtra)",
+      "trip_count": 105,
+      "median_delay_ratio": 2.6666666666666665,
+      "pct_delayed": 0.9238095238095239,
+      "breach_impact": 97.0
+    },
+    {
+      "source_name": "Mumbai_Chndivli_PC (Maharashtra)",
+      "dest_name": "Bhiwandi_Mankoli_HB (Maharashtra)",
+      "trip_count": 99,
+      "median_delay_ratio": 3.0,
+      "pct_delayed": 0.9595959595959596,
+      "breach_impact": 95.0
+    },
+    {
+      "source_name": "Bangalore_Nelmngla_H (Karnataka)",
+      "dest_name": "Bengaluru_Bomsndra_HB (Karnataka)",
+      "trip_count": 127,
+      "median_delay_ratio": 1.5,
+      "pct_delayed": 0.7165354330708661,
+      "breach_impact": 91.0
+    },
+    {
+      "source_name": "Gurgaon_Bilaspur_HB (Haryana)",
+      "dest_name": "Sonipat_Kundli_H (Haryana)",
+      "trip_count": 92,
+      "median_delay_ratio": 2.2404761904761905,
+      "pct_delayed": 0.9456521739130435,
+      "breach_impact": 87.0
+    },
+    {
+      "source_name": "Bengaluru_Bomsndra_HB (Karnataka)",
+      "dest_name": "Bengaluru_KGAirprt_HB (Karnataka)",
+      "trip_count": 121,
+      "median_delay_ratio": 1.5,
+      "pct_delayed": 0.7107438016528925,
+      "breach_impact": 86.0
+    },
+    {
+      "source_name": "Bhiwandi_Mankoli_HB (Maharashtra)",
+      "dest_name": "Mumbai_MiraRd_IP (Maharashtra)",
+      "trip_count": 78,
+      "median_delay_ratio": 2.7954545454545454,
+      "pct_delayed": 1.0,
+      "breach_impact": 78.0
+    },
+    {
+      "source_name": "Bengaluru_Bomsndra_HB (Karnataka)",
+      "dest_name": "Bangalore_Nelmngla_H (Karnataka)",
+      "trip_count": 102,
+      "median_delay_ratio": 1.5,
+      "pct_delayed": 0.7352941176470589,
+      "breach_impact": 75.0
+    },
+    {
+      "source_name": "Del_Okhla_PC (Delhi)",
+      "dest_name": "Gurgaon_Bilaspur_HB (Haryana)",
+      "trip_count": 76,
+      "median_delay_ratio": 2.75,
+      "pct_delayed": 0.9605263157894737,
+      "breach_impact": 73.0
+    },
+    {
+      "source_name": "Bhiwandi_Mankoli_HB (Maharashtra)",
+      "dest_name": "Pune_Tathawde_H (Maharashtra)",
+      "trip_count": 72,
+      "median_delay_ratio": 2.8798076923076925,
+      "pct_delayed": 1.0,
+      "breach_impact": 72.0
+    }
+  ],
+  "model_comparison": [
+    {
+      "model": "baseline",
+      "MAE": 17.9642,
+      "RMSE": 53.9264,
+      "MedAE": 7.4167,
+      "Accuracy_15pct": 22.26,
+      "Accuracy_20pct": 28.96
+    },
+    {
+      "model": "graph_enhanced",
+      "MAE": 14.9958,
+      "RMSE": 51.47,
+      "MedAE": 5.308,
+      "Accuracy_15pct": 31.71,
+      "Accuracy_20pct": 40.02
+    },
+    {
+      "model": "graph_n2v",
+      "MAE": 15.17,
+      "RMSE": 50.9176,
+      "MedAE": 5.5323,
+      "Accuracy_15pct": 30.05,
+      "Accuracy_20pct": 38.57
+    }
+  ],
+  "overall_stats": {
+    "total_trips": 14817,
+    "total_segments": 26368,
+    "sla_breach_rate": 87.51516990291263,
+    "avg_delay_ratio": 3.059704749869686,
+    "states_covered": 32
+  }
+}

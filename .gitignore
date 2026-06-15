@@ -9,6 +9,16 @@ build/
 eggs/
 *.egg
 
+# Large files
+*.zip
+*.pdf
+test_xgb.json
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
 # Virtual environments
 venv/
 env/
